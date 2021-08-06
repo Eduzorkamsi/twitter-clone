@@ -1,0 +1,374 @@
+/* CSS RESET START */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* CSS RESET ENDS */
+
+body {
+  background-color: #ffffff;
+}
+
+div[class="container-fluid"] {
+  min-height: 400px;
+  padding-left: 0;
+}
+div[class="container-fluid"] .left {
+  height: 100%;
+}
+
+div[class="container-fluid"] .twitterMobile {
+  display: none;
+}
+
+div[class="container-fluid"] .right {
+  background-color: #ffffff;
+  min-height: 80%;
+  padding-bottom: 3%;
+  color: #328ef1;
+}
+div[class="container-fluid"] .right #welcome {
+  margin: 5%;
+  margin-top: 5%;
+  min-height: 200px;
+}
+div[class="container-fluid"] .right #welcome .logo-segment {
+  padding: 2% 0%;
+}
+
+div[class="container-fluid"] .right #welcome h1 {
+  color: #000;
+  font-weight: bold;
+  font-size: 64px;
+  margin-top: 5%;
+}
+
+div[class="container-fluid"] .right #welcome h5 {
+  color: #000;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+div[class="container-fluid"] .right #welcome div[id="signUp"] button {
+  width: 60%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  padding: 7px;
+  margin-top: 25px;
+}
+
+div[class="container-fluid"] .right #welcome div[id="signIn"] button {
+  width: 60%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  padding: 12px;
+  margin-top: 10px;
+}
+div[class="container-fluid"] .right #welcome #signUp button {
+  color: #000;
+  border: 1px solid #caccca;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#signText {
+  font-weight: bold;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+div[class="container-fluid"] .right #welcome #signIn button {
+  color: #000;
+  border: 1px solid #caccca;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+#terms {
+  color: #92928b;
+  font-size: 0.8em;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+span {
+  color: #328ef1;
+}
+
+#Login {
+  color: #92928b;
+  margin-top: 30px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  color: #92928b;
+  font-size: 0.8em;
+  font-weight: 400;
+  padding: 0px 30px 0px 30px;
+}
+
+footer #footerLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer #copyright {
+  display: flex;
+  align-self: center;
+}
+
+footer p {
+  padding: 3px 5px;
+}
+
+.mobileFooter {
+  display: none;
+}
+
+@media screen and (max-width: 938px) {
+  footer div {
+    font-size: 0.5em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #000;
+  }
+
+  .col-sm-6 {
+    max-width: none;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  div[class="container-fluid"] .right {
+    color: #f4f3e9;
+    background-color: #000;
+  }
+
+  div[class="container-fluid"] .right #welcome h5 {
+    color: #f4f3e9;
+  }
+  div[class="container-fluid"] .right #welcome h1 {
+    color: #f4f3e9;
+    font-size: 52px;
+  }
+
+  footer {
+    font-size: 2em;
+  }
+
+  .webFooter {
+    display: none;
+  }
+
+  .mobileFooter {
+    display: flex;
+  }
+
+  .mobileFooter #footerLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  .mobileFooter #copyright {
+    display: flex;
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  #Login {
+    color: #f4f3e9;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  div[class="container-fluid"] .right #welcome h1 {
+    color: #f4f3e9;
+    font-size: 40px;
+  }
+  div[class="container-fluid"] .right #welcome h5 {
+    color: #f4f3e9;
+    font-size: 24px;
+  }
+
+  div[class="container-fluid"] .right #welcome {
+    margin: 10%;
+  }
+
+  div[class="container-fluid"] .right #welcome #signUp button {
+    font-size: small;
+    width: 100%;
+  }
+
+  div[class="container-fluid"] .right #welcome #signIn button {
+    font-size: small;
+    width: 100%;
+  }
+
+  #terms {
+    font-size: 0.7em;
+  }
+
+  #Login {
+    color: #f4f3e9;
+    font-size: small;
+    margin-top: 20px;
+  }
+
+  .left {
+    display: none;
+  }
+
+  div[class="container-fluid"] .twitterMobile {
+    display: contents;
+  }
+
+  #about {
+    font-size: 0.7em;
+  }
+}
